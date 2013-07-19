@@ -35,6 +35,10 @@ import backtype.storm.scheduler.WorkerSlot;
  */
 public class DemoScheduler implements IScheduler {
 
+    @Override
+    public void prepare(Map map) {
+    }
+
     public void schedule(Topologies topologies, Cluster cluster) {
     	System.out.println("DemoScheduler: begin scheduling");
         // Gets the topology which we want to schedule
